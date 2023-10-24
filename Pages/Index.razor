@@ -1,0 +1,15 @@
+﻿@page "/"
+@using System.Diagnostics
+<PageTitle>Index</PageTitle>
+
+<SurveyPrompt Title="How is Blazor working for you?" />
+
+@code {
+    bool visible = false;
+
+    private void ToggleDropDown()
+    {
+        Console.WriteLine(visible);
+        visible = !visible;
+    }
+}
